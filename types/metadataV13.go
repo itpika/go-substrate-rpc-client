@@ -2,8 +2,8 @@ package types
 
 import (
 	"fmt"
-	"github.com/JFJun/go-substrate-rpc-client/v3/scale"
-	"github.com/JFJun/go-substrate-rpc-client/v3/xxhash"
+	"github.com/itpika/go-substrate-rpc-client/v3/scale"
+	"github.com/itpika/go-substrate-rpc-client/v3/xxhash"
 	"hash"
 	"strings"
 )

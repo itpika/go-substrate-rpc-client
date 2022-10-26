@@ -18,6 +18,9 @@ package signature
 
 import (
 	"errors"
+	"fmt"
+	"os"
+	"strconv"
 
 	"github.com/vedhavyas/go-subkey"
 	"github.com/vedhavyas/go-subkey/sr25519"
@@ -115,21 +118,21 @@ func Verify(data []byte, sig []byte, privateKeyURI string) (bool, error) {
 // // not valid or the keyring pair cannot be derived
 // // Loads Network from TEST_NETWORK variable
 // // Leave TEST_NETWORK empty or unset for default
-// func LoadKeyringPairFromEnv() (kp KeyringPair, ok bool) {
-// 	networkString := os.Getenv("TEST_NETWORK")
-// 	network, err := strconv.ParseInt(networkString, 10, 8)
-// 	if err != nil {
-// 		// defaults to generic substrate address
-// 		// https://github.com/paritytech/substrate/wiki/External-Address-Format-(SS58)#checksum-types
-// 		network = 42
-// 	}
-// 	priv, ok := os.LookupEnv("TEST_PRIV_KEY")
-// 	if !ok || priv == "" {
-// 		return kp, false
-// 	}
-// 	kp, err = KeyringPairFromSecret(priv, uint8(network))
-// 	if err != nil {
-// 		panic(fmt.Errorf("cannot load keyring pair from env or use fallback: %v", err))
-// 	}
-// 	return kp, true
-// }
+func LoadKeyringPairFromEnv() (kp KeyringPair, ok bool) {
+	networkString := os.Getenv("TEST_NETWORK")
+	network, err := strconv.ParseInt(networkString, 10, 8)
+	if err != nil {
+		// defaults to generic substrate address
+		// https://github.com/paritytech/substrate/wiki/External-Address-Format-(SS58)#checksum-types
+		network = 42
+	}
+	priv, ok := os.LookupEnv("TEST_PRIV_KEY")
+	if !ok || priv == "" {
+		return kp, false
+	}
+	kp, err = KeyringPairFromSecret(priv, uint8(network))
+	if err != nil {
+		panic(fmt.Errorf("cannot load keyring pair from env or use fallback: %v", err))
+	}
+	return kp, true
+}

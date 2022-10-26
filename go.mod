@@ -1,4 +1,4 @@
-module github.com/JFJun/go-substrate-rpc-client/v3
+module github.com/itpika/go-substrate-rpc-client/v3
 
 go 1.15
 

@@ -3,8 +3,8 @@ package types_test
 import (
 	"testing"
 
-	"github.com/JFJun/go-substrate-rpc-client/v3/signature"
-	"github.com/JFJun/go-substrate-rpc-client/v3/types"
+	"github.com/itpika/go-substrate-rpc-client/v3/signature"
+	"github.com/itpika/go-substrate-rpc-client/v3/types"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -22,8 +22,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/JFJun/go-substrate-rpc-client/v3/scale"
-	. "github.com/JFJun/go-substrate-rpc-client/v3/types"
+	"github.com/itpika/go-substrate-rpc-client/v3/scale"
+	. "github.com/itpika/go-substrate-rpc-client/v3/types"
 	"github.com/stretchr/testify/assert"
 )
 

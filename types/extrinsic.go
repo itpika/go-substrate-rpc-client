@@ -25,8 +25,8 @@ import (
 	"math/big"
 	"strings"
 
-	"github.com/JFJun/go-substrate-rpc-client/v3/scale"
-	"github.com/JFJun/go-substrate-rpc-client/v3/signature"
+	"github.com/itpika/go-substrate-rpc-client/v3/scale"
+	"github.com/itpika/go-substrate-rpc-client/v3/signature"
 )
 
 const (

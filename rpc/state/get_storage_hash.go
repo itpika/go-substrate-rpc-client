@@ -17,8 +17,8 @@
 package state
 
 import (
-	"github.com/JFJun/go-substrate-rpc-client/v3/client"
-	"github.com/JFJun/go-substrate-rpc-client/v3/types"
+	"github.com/itpika/go-substrate-rpc-client/v3/client"
+	"github.com/itpika/go-substrate-rpc-client/v3/types"
 )
 
 // GetStorageHash retreives the storage hash for the given key
