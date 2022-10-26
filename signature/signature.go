@@ -18,9 +18,6 @@ package signature
 
 import (
 	"errors"
-	"fmt"
-	"os"
-	"strconv"
 
 	"github.com/vedhavyas/go-subkey"
 	"github.com/vedhavyas/go-subkey/sr25519"
@@ -39,24 +36,25 @@ type KeyringPair struct {
 // KeyringPairFromSecret creates KeyPair based on seed/phrase and network
 // Leave network empty for default behavior
 func KeyringPairFromSecret(seedOrPhrase string, network uint8) (KeyringPair, error) {
-	scheme := sr25519.Scheme{}
-	kyr, err := subkey.DeriveKeyPair(scheme, seedOrPhrase)
-	if err != nil {
-		return KeyringPair{}, err
-	}
+	return KeyringPair{}, nil
+	// scheme := sr25519.Scheme{}
+	// kyr, err := subkey.DeriveKeyPair(scheme, seedOrPhrase)
+	// if err != nil {
+	// 	return KeyringPair{}, err
+	// }
 
-	ss58Address, err := kyr.SS58Address(network)
-	if err != nil {
-		return KeyringPair{}, err
-	}
+	// ss58Address, err := kyr.SS58Address(network)
+	// if err != nil {
+	// 	return KeyringPair{}, err
+	// }
 
-	var pk = kyr.Public()
+	// var pk = kyr.Public()
 
-	return KeyringPair{
-		URI:       seedOrPhrase,
-		Address:   ss58Address,
-		PublicKey: pk,
-	}, nil
+	// return KeyringPair{
+	// 	URI:       seedOrPhrase,
+	// 	Address:   ss58Address,
+	// 	PublicKey: pk,
+	// }, nil
 }
 
 var TestKeyringPairAlice = KeyringPair{
@@ -112,26 +110,26 @@ func Verify(data []byte, sig []byte, privateKeyURI string) (bool, error) {
 	return v, nil
 }
 
-// LoadKeyringPairFromEnv looks up whether the env variable TEST_PRIV_KEY is set and is not empty and tries to use its
-// content as a private phrase, seed or URI to derive a key ring pair. Panics if the private phrase, seed or URI is
-// not valid or the keyring pair cannot be derived
-// Loads Network from TEST_NETWORK variable
-// Leave TEST_NETWORK empty or unset for default
-func LoadKeyringPairFromEnv() (kp KeyringPair, ok bool) {
-	networkString := os.Getenv("TEST_NETWORK")
-	network, err := strconv.ParseInt(networkString, 10, 8)
-	if err != nil {
-		// defaults to generic substrate address
-		// https://github.com/paritytech/substrate/wiki/External-Address-Format-(SS58)#checksum-types
-		network = 42
-	}
-	priv, ok := os.LookupEnv("TEST_PRIV_KEY")
-	if !ok || priv == "" {
-		return kp, false
-	}
-	kp, err = KeyringPairFromSecret(priv, uint8(network))
-	if err != nil {
-		panic(fmt.Errorf("cannot load keyring pair from env or use fallback: %v", err))
-	}
-	return kp, true
-}
+// // LoadKeyringPairFromEnv looks up whether the env variable TEST_PRIV_KEY is set and is not empty and tries to use its
+// // content as a private phrase, seed or URI to derive a key ring pair. Panics if the private phrase, seed or URI is
+// // not valid or the keyring pair cannot be derived
+// // Loads Network from TEST_NETWORK variable
+// // Leave TEST_NETWORK empty or unset for default
+// func LoadKeyringPairFromEnv() (kp KeyringPair, ok bool) {
+// 	networkString := os.Getenv("TEST_NETWORK")
+// 	network, err := strconv.ParseInt(networkString, 10, 8)
+// 	if err != nil {
+// 		// defaults to generic substrate address
+// 		// https://github.com/paritytech/substrate/wiki/External-Address-Format-(SS58)#checksum-types
+// 		network = 42
+// 	}
+// 	priv, ok := os.LookupEnv("TEST_PRIV_KEY")
+// 	if !ok || priv == "" {
+// 		return kp, false
+// 	}
+// 	kp, err = KeyringPairFromSecret(priv, uint8(network))
+// 	if err != nil {
+// 		panic(fmt.Errorf("cannot load keyring pair from env or use fallback: %v", err))
+// 	}
+// 	return kp, true
+// }
