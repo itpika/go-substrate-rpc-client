@@ -20,8 +20,8 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/itpika/go-substrate-rpc-client/v3/scale"
-	. "github.com/itpika/go-substrate-rpc-client/v3/types"
+	"github.com/itpika/go-substrate-rpc-client/scale"
+	. "github.com/itpika/go-substrate-rpc-client/types"
 )
 
 // PhaseEnum is an enum example. Since Go has no enums, it is implemented as a struct with flags for each

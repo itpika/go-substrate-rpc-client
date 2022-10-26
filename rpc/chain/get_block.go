@@ -17,8 +17,8 @@
 package chain
 
 import (
-	"github.com/itpika/go-substrate-rpc-client/v3/client"
-	"github.com/itpika/go-substrate-rpc-client/v3/types"
+	"github.com/itpika/go-substrate-rpc-client/client"
+	"github.com/itpika/go-substrate-rpc-client/types"
 )
 
 // GetBlock returns the header and body of the relay chain block with the given hash

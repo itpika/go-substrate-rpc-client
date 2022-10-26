@@ -21,8 +21,8 @@ import (
 	"hash"
 	"strings"
 
-	"github.com/itpika/go-substrate-rpc-client/v3/scale"
-	"github.com/itpika/go-substrate-rpc-client/v3/xxhash"
+	"github.com/itpika/go-substrate-rpc-client/scale"
+	"github.com/itpika/go-substrate-rpc-client/xxhash"
 )
 
 // Modelled after packages/types/src/Metadata/v7/Metadata.ts

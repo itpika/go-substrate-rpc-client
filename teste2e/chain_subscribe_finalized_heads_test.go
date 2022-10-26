@@ -21,8 +21,8 @@ import (
 	"testing"
 	"time"
 
-	gsrpc "github.com/itpika/go-substrate-rpc-client/v3"
-	"github.com/itpika/go-substrate-rpc-client/v3/config"
+	gsrpc "github.com/itpika/go-substrate-rpc-client"
+	"github.com/itpika/go-substrate-rpc-client/config"
 	"github.com/stretchr/testify/assert"
 )
 

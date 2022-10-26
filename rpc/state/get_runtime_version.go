@@ -17,8 +17,8 @@
 package state
 
 import (
-	"github.com/itpika/go-substrate-rpc-client/v3/client"
-	"github.com/itpika/go-substrate-rpc-client/v3/types"
+	"github.com/itpika/go-substrate-rpc-client/client"
+	"github.com/itpika/go-substrate-rpc-client/types"
 )
 
 // GetRuntimeVersion returns the runtime version at the given block

@@ -3,8 +3,9 @@ package types
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/itpika/go-substrate-rpc-client/v3/scale"
 	"math/big"
+
+	"github.com/itpika/go-substrate-rpc-client/scale"
 )
 
 type PortableTypeV14 struct {

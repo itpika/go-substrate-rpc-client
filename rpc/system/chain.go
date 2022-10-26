@@ -17,7 +17,7 @@
 package system
 
 import (
-	"github.com/itpika/go-substrate-rpc-client/v3/types"
+	"github.com/itpika/go-substrate-rpc-client/types"
 )
 
 // Chain retrieves the chain

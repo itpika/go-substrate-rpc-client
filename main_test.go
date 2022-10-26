@@ -21,15 +21,16 @@ import (
 	"encoding/hex"
 	"encoding/json"
 	"fmt"
-	"github.com/itpika/go-substrate-rpc-client/v3/scale"
 	"math/big"
 	"testing"
 	"time"
 
-	gsrpc "github.com/itpika/go-substrate-rpc-client/v3"
-	"github.com/itpika/go-substrate-rpc-client/v3/config"
-	"github.com/itpika/go-substrate-rpc-client/v3/signature"
-	"github.com/itpika/go-substrate-rpc-client/v3/types"
+	"github.com/itpika/go-substrate-rpc-client/scale"
+
+	gsrpc "github.com/itpika/go-substrate-rpc-client"
+	"github.com/itpika/go-substrate-rpc-client/config"
+	"github.com/itpika/go-substrate-rpc-client/signature"
+	"github.com/itpika/go-substrate-rpc-client/types"
 )
 
 func Example_simpleConnect() {

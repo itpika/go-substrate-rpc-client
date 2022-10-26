@@ -1,6 +1,6 @@
 package types
 
-import "github.com/itpika/go-substrate-rpc-client/v3/scale"
+import "github.com/itpika/go-substrate-rpc-client/scale"
 
 // Modelled after packages/types/src/Metadata/v10/toV11.ts
 type MetadataV11 struct {

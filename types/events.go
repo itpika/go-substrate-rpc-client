@@ -19,7 +19,7 @@ package types
 import (
 	"fmt"
 
-	"github.com/itpika/go-substrate-rpc-client/v3/scale"
+	"github.com/itpika/go-substrate-rpc-client/scale"
 )
 
 // EventClaimsClaimed is emitted when an account claims some DOTs

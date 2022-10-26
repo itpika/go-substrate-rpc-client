@@ -17,8 +17,8 @@
 package state
 
 import (
-	"github.com/itpika/go-substrate-rpc-client/v3/client"
-	"github.com/itpika/go-substrate-rpc-client/v3/types"
+	"github.com/itpika/go-substrate-rpc-client/client"
+	"github.com/itpika/go-substrate-rpc-client/types"
 )
 
 // GetChildKeys retreives the keys with the given prefix of a specific child storage

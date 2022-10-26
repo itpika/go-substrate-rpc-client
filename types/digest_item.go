@@ -19,7 +19,7 @@ package types
 import (
 	"fmt"
 
-	"github.com/itpika/go-substrate-rpc-client/v3/scale"
+	"github.com/itpika/go-substrate-rpc-client/scale"
 )
 
 // DigestItem specifies the item in the logs of a digest

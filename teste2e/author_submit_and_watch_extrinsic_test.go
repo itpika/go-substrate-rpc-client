@@ -21,11 +21,11 @@ import (
 	"testing"
 	"time"
 
-	gsrpc "github.com/itpika/go-substrate-rpc-client/v3"
-	"github.com/itpika/go-substrate-rpc-client/v3/config"
-	"github.com/itpika/go-substrate-rpc-client/v3/rpc/author"
-	"github.com/itpika/go-substrate-rpc-client/v3/signature"
-	"github.com/itpika/go-substrate-rpc-client/v3/types"
+	gsrpc "github.com/itpika/go-substrate-rpc-client"
+	"github.com/itpika/go-substrate-rpc-client/config"
+	"github.com/itpika/go-substrate-rpc-client/rpc/author"
+	"github.com/itpika/go-substrate-rpc-client/signature"
+	"github.com/itpika/go-substrate-rpc-client/types"
 	"github.com/stretchr/testify/assert"
 )
 

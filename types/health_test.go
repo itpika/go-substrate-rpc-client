@@ -19,7 +19,7 @@ package types_test
 import (
 	"testing"
 
-	. "github.com/itpika/go-substrate-rpc-client/v3/types"
+	. "github.com/itpika/go-substrate-rpc-client/types"
 )
 
 func TestHealth_EncodeDecode(t *testing.T) {

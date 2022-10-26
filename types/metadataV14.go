@@ -4,10 +4,11 @@ import (
 	"encoding/hex"
 	"errors"
 	"fmt"
-	"github.com/itpika/go-substrate-rpc-client/v3/scale"
 	"hash"
 	"strings"
 	"sync"
+
+	"github.com/itpika/go-substrate-rpc-client/scale"
 )
 
 type MetadataV14 struct {

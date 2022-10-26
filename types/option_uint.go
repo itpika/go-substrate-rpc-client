@@ -16,7 +16,7 @@
 
 package types
 
-import "github.com/itpika/go-substrate-rpc-client/v3/scale"
+import "github.com/itpika/go-substrate-rpc-client/scale"
 
 // OptionU8 is a structure that can store a U8 or a missing value
 type OptionU8 struct {

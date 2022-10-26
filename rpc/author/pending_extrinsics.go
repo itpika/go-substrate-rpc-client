@@ -17,7 +17,7 @@
 package author
 
 import (
-	"github.com/itpika/go-substrate-rpc-client/v3/types"
+	"github.com/itpika/go-substrate-rpc-client/types"
 )
 
 // PendingExtrinsics returns all pending extrinsics, potentially grouped by sender

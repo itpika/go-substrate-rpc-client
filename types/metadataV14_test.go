@@ -5,8 +5,9 @@ import (
 	"encoding/hex"
 	"encoding/json"
 	"fmt"
-	"github.com/itpika/go-substrate-rpc-client/v3/scale"
 	"testing"
+
+	"github.com/itpika/go-substrate-rpc-client/scale"
 )
 
 func TestDecodePortableRegistry(t *testing.T) {

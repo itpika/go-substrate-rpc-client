@@ -21,8 +21,8 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/itpika/go-substrate-rpc-client/v3/scale"
-	. "github.com/itpika/go-substrate-rpc-client/v3/types"
+	"github.com/itpika/go-substrate-rpc-client/scale"
+	. "github.com/itpika/go-substrate-rpc-client/types"
 	"github.com/stretchr/testify/assert"
 )
 

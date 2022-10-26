@@ -17,13 +17,13 @@
 package rpc
 
 import (
-	"github.com/itpika/go-substrate-rpc-client/v3/client"
-	"github.com/itpika/go-substrate-rpc-client/v3/rpc/author"
-	"github.com/itpika/go-substrate-rpc-client/v3/rpc/chain"
-	"github.com/itpika/go-substrate-rpc-client/v3/rpc/offchain"
-	"github.com/itpika/go-substrate-rpc-client/v3/rpc/state"
-	"github.com/itpika/go-substrate-rpc-client/v3/rpc/system"
-	"github.com/itpika/go-substrate-rpc-client/v3/types"
+	"github.com/itpika/go-substrate-rpc-client/client"
+	"github.com/itpika/go-substrate-rpc-client/rpc/author"
+	"github.com/itpika/go-substrate-rpc-client/rpc/chain"
+	"github.com/itpika/go-substrate-rpc-client/rpc/offchain"
+	"github.com/itpika/go-substrate-rpc-client/rpc/state"
+	"github.com/itpika/go-substrate-rpc-client/rpc/system"
+	"github.com/itpika/go-substrate-rpc-client/types"
 )
 
 type RPC struct {

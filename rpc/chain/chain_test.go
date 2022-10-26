@@ -20,8 +20,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/itpika/go-substrate-rpc-client/v3/client"
-	"github.com/itpika/go-substrate-rpc-client/v3/config"
+	"github.com/itpika/go-substrate-rpc-client/client"
+	"github.com/itpika/go-substrate-rpc-client/config"
 )
 
 var chain *Chain

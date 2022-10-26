@@ -20,13 +20,14 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
-	"github.com/huandu/xstrings"
 	"io"
 	"math/big"
 	"strings"
 
-	"github.com/itpika/go-substrate-rpc-client/v3/scale"
-	"github.com/itpika/go-substrate-rpc-client/v3/signature"
+	"github.com/huandu/xstrings"
+
+	"github.com/itpika/go-substrate-rpc-client/scale"
+	"github.com/itpika/go-substrate-rpc-client/signature"
 )
 
 const (
